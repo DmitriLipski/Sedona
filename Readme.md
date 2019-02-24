@@ -12,9 +12,14 @@ npm install
 npm run start
 ```
 
-### Build and run with Docker
+### Build Docker image
 ```
-sudo docker build -t sedona .
+npm run build
+docker build -t sedona .
+```
+
+### Run Docker container on the port 5000
+```
 docker run -p 5000:80 --name sedona -d sedona
 ```
 
